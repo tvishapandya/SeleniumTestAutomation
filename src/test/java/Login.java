@@ -20,7 +20,7 @@ public class Login {
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://www.hostelworld.com/");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10000));
 
         driver.findElement(By.id("header-login")).click();
 
